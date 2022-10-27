@@ -1,21 +1,35 @@
 {
   "name": "wenyuan",
-  "private": true,
-  "version": "0.0.0",
+  "version": "0.0.1",
   "type": "module",
+  "main": "dist/wenyuan.umd.js",
+  "module": "dist/wenyuan.es.js",
+  "typings": "dist/index.d.ts",
   "scripts": {
-    "dev": "vite",
-    "build": "tsc && vite build",
-    "preview": "vite preview"
+    "preinstall": "npx only-allow yarn",
+    "build": "tsc && vite build"
   },
   "dependencies": {
+    "@rollup/plugin-typescript": "^9.0.2",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.2.0",
+    "styled-components": "^5.3.6",
+    "tslib": "^2.4.0"
   },
   "devDependencies": {
+    "@babel/core": "^7.19.6",
+    "@storybook/addon-actions": "^6.5.13",
+    "@storybook/addon-essentials": "^6.5.13",
+    "@storybook/addon-interactions": "^6.5.13",
+    "@storybook/addon-links": "^6.5.13",
+    "@storybook/builder-vite": "^0.2.4",
+    "@storybook/react": "^6.5.13",
+    "@storybook/testing-library": "^0.0.13",
     "@types/react": "^18.0.22",
     "@types/react-dom": "^18.0.7",
+    "@types/styled-components": "^5.1.26",
     "@vitejs/plugin-react": "^2.2.0",
+    "babel-loader": "^8.2.5",
     "typescript": "^4.6.4",
     "vite": "^3.2.0"
   }
